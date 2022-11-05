@@ -23,10 +23,6 @@ class Solution:
                     
                     if not occurrences_left:
                         break
-                    
-                    if occurrences_left == 1 and sum(counter.values()) == 1:
-                        results.append(i)
-                        break
                         
                     if occurrences_left == 1:
                         if sum(counter.values()) == 1:
