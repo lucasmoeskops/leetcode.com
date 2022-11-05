@@ -1,3 +1,7 @@
+# Score:
+#   Runtime: 41%
+#   Memory usage: 60%
+
 def findPaths(board, word, sx, sy):
     """ Find paths for given word on the board starting from (sx, sy) """
     m = len(board[0])
