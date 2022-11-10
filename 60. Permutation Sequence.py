@@ -12,4 +12,4 @@ def recurse(n, k, remaining):
 
 class Solution:
     def getPermutation(self, n: int, k: int) -> str:
-        return rec(n, k-1, [*range(1, n+1)])
+        return recurse(n, k-1, [*range(1, n+1)])
