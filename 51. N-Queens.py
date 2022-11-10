@@ -8,12 +8,12 @@ def recurse(n, remaining, taken):
     row = n - len(remaining)
     out = []
     for col in remaining:
-        for j, taken_col in enumerate(taken):
-            if taken_col - j + i == col or col == taken_col - i + j:
+        for taken_row, taken_col in enumerate(taken):
+            if taken_col - taken_row + row == col or col == taken_col - row + taken_row:
                 break
         else:
             s = ["." * col + "Q" + "." * (n - col - 1)]
-            out.extend([s + r for r in recurse(n, [c for c in cols if c != col], taken + [col])])
+            out.extend([s + r for r in recurse(n, [c for c in remaining if c != col], taken + [col])])
     return out
 
 class Solution:
