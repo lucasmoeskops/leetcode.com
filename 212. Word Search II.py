@@ -69,7 +69,7 @@ class Solution:
                 if len(before) > 1:
                     before_paths = findPaths(board, before[::-1], x, y)
                 else:
-                    if findPath(board, after, x, y):
+                    if findPaths(board, after, x, y):
                         results.append(word)
                         break
                     continue
