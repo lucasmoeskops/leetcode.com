@@ -1,6 +1,6 @@
 # Score
-#  Runtime:
-#  Memory usage:
+#  Runtime: 88%
+#  Memory usage: 36%
 #
 # Description
 #
